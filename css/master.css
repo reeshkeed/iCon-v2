@@ -1,0 +1,200 @@
+body, html {
+  height: 100%;
+}
+
+#user-nav{
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  background-color: #011837;
+}
+
+.icon{
+  margin-right: 5px;
+}
+
+.main-bg{
+  background: linear-gradient(160deg,rgba(1,25,54,.8) 40%,rgba(246,104,38,.8)),url('../img/bg.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5% 0;
+}
+
+.content{
+  padding: 5% 0;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.main-container{
+  margin-right: 0px;
+}
+
+.sidebar{
+  background-color: #171717;
+  height: 100vh;
+}
+
+.logo{
+  height: auto;
+  width: 220px;
+}
+
+#passcode{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@font-face{
+  font-family: 'walkway';
+  src: url('../fonts/Walkway_SemiBold.ttf');
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face{
+  font-family: 'aller';
+  src: url('../fonts/Aller_Bd.ttf');
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face{
+  font-family: 'deco';
+  src: url('../fonts/Market_Deco.ttf');
+  font-style: normal;
+  font-weight: 100;
+}
+
+.headings{
+  font-family: walkway;
+  font-weight: 100;
+  padding-top: 15px;
+}
+
+.brand-title img{
+  width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.navbar-brand{
+  font-family: deco;
+  font-weight: 100;
+}
+
+#form-code{
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+}
+
+.enter-button{
+  background-color: #e54b4b;
+  color: white;
+}
+
+.card{
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#time{
+  padding: 15px 0;
+}
+
+.footer{
+  background-color: #363636;
+  height: 100%;
+}
+
+#admin-nav{
+  background-color: #161616;
+}
+
+.dark-bg{
+  background: linear-gradient(90deg,#070707, #191919, #070707);
+}
+
+.card-login{
+  height: auto;
+  width: 400px;
+  padding: 60px 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dark-input{
+  background-color: #040404;
+  color: white;
+  border: 1px solid #6c757d;
+}
+
+.dark-input:focus{
+  background-color: #040404;
+  color: white;
+}
+
+#btn-login{
+  background-color: #1c1c1c;
+}
+
+.admin-logo{
+  height: 100px;
+  width: auto;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidenav{
+  padding-top: 100px;
+}
+
+.big{
+  font-size: 60px !important;
+}
+
+.title-pages{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.card-cred{
+  height: auto;
+  width: 600px;
+  padding: 60px 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#show-pass{
+  margin-top: 15px;
+}
+
+@media (max-width: 576px) {
+  .logo{
+    width: 130px;
+    padding-top: 20px;
+  }
+
+  #form-code{
+    width: 250px;
+  }
+
+  .card-login{
+    width: 350px;
+  }
+
+  .brand-title img{
+    width: 160px;
+  }
+}
