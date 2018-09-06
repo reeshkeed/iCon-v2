@@ -13,7 +13,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark" id="user-nav">
       <div class="container">
-        <a class="navbar-brand" href="../admin/index.php">
+        <a class="navbar-brand" href="http://hotspot.localnet/admin/index.php">
           <img src="img/icon-text.png" width="auto" height="30" class="d-inline-block align-top icon" alt="">
         </a>
         <!--div class="justify-content-end" id="navbarNav">

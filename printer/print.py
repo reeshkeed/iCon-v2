@@ -25,9 +25,9 @@ con = MySQLdb.connect("localhost", "admin", "password", "icon")
 
 mycursor = con.cursor()
 
-mycursor.execute("INSERT INTO user(passcode) VALUES('" +code+ "')")
+mycursor.execute("INSERT INTO user(passcode, status) VALUES('" +code+ "', 'inactive')")
 
 con.commit()
 con.close()
 
-print(mycursor.rowcount, "record inserted.")
+print(mycursor.rowcount, "new code generated")

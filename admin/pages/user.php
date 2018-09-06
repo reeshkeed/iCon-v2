@@ -1,5 +1,5 @@
 <?php
-  $connect = mysqli_connect('localhost', 'root', '', 'icon');
+  $connect = mysqli_connect('localhost', 'admin', 'password', 'icon');
 
   $query = "SELECT * FROM user ORDER BY ID DESC";
   $result = mysqli_query($connect, $query);
@@ -62,9 +62,8 @@
             <th>Host</th>
             <th>Mac address</th>
             <th>IP address</th>
-            <th>T.Remain</th>
+            <th>Duration</th>
             <th>Time in</th>
-            <th>Time out</th>
             <th>Passcode</th>
             <th>Option</th>
           </tr>
@@ -75,12 +74,11 @@
             echo '
             <tr>
             <td>'.$row["id"].'</td>
-            <td>'.$row["host"].'</td>
+            <td>'.$row["model"].'</td>
             <td>'.$row["mac_address"].'</td>
             <td>'.$row["ip_address"].'</td>
-            <td>'.$row["time"].'</td>
+            <td>'.$row["duration"].'</td>
             <td>'.$row["time_in"].'</td>
-            <td>'.$row["time_out"].'</td>
             <td>'.$row["passcode"].'</td>
             <td>
             <button class="btn btn-danger btn-xs">

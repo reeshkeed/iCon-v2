@@ -1,5 +1,5 @@
 <?php
-  $connect = mysqli_connect('localhost', 'root', '', 'icon');
+  $connect = mysqli_connect('localhost', 'admin', 'password', 'icon');
 
   $query = "SELECT * FROM user ORDER BY ID DESC";
   $result = mysqli_query($connect, $query);
@@ -53,7 +53,7 @@
   </nav>
 
   <div style="padding-top: 20px; padding-bottom: 20px;" class="container">
-    <h2 class="title-pages">Users statistics</h2>
+    <!--h2 class="title-pages">Users statistics</h2>
     <div class="row text-center">
       <div class="col">
         <div class="card bg-light mb-3" style="max-width: 18rem;">
@@ -79,17 +79,19 @@
           </div>
         </div>
       </div>
-    </div>
+    </div-->
 
     <h2 class="title-pages">Active users</h2>
     <div style="border: 1px solid #ced4da; padding: 24px; border-radius: 7px;" class="table-responsive">
       <table id="example" class="table table-striped table-bordered" style="width:100%">
         <thead class="thead-dark">
           <tr>
-            <th>Hostname</th>
+            <th>Device</th>
             <th>Mac address</th>
             <th>IP address</th>
-            <th>Time remaining</th>
+            <th>Time In</th>
+            <th>Duration</th>
+            <th>Status</th>
             <th>Option</th>
           </tr>
         </thead>
@@ -98,10 +100,12 @@
           while ($row = mysqli_fetch_array($result)) {
             echo '
             <tr>
-            <td>'.$row["host"].'</td>
+            <td>'.$row["model"].'</td>
             <td>'.$row["mac_address"].'</td>
             <td>'.$row["ip_address"].'</td>
-            <td>'.$row["time"].'</td>
+            <td>'.$row["time_in"].'</td>
+            <td>'.$row["duration"].'</td>
+            <td>'.$row["status"].'</td>
             <td>
             <button class="btn btn-danger btn-xs">
             Block
